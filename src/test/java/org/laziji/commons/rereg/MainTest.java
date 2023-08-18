@@ -14,6 +14,7 @@ public class MainTest {
     @Test
     public void test() throws RegexpIllegalException, UninitializedException, TypeNotMatchException {
 
+        random("[1-9]\\d{5}(19|20)\\d{2}(0\\d|1[0-2])([0-2]\\d|3[0-1])\\d{3}[0-9Xx]", "身份证");
         random("\\w{6,12}@[a-z0-9]{3}\\.(com|cn)", "邮箱");
         random("1(3|5|7|8)\\d{9}", "手机号");
         random("-?[1-9]\\d*\\.\\d+", "浮点数");
